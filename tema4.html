@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html class="no-js" lang="da">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -8,6 +9,13 @@
 
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="javascript.js">
+
+     <link href="https://fonts.googleapis.com/css?family=Lora:400i" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
     <title>Portfolio</title>
 </head>
@@ -21,7 +29,7 @@
             <li><a href="index.html">Forside</a></li>
             <li class="dropdown"><a href="#">Om mig</a>
                 <ul class="dropdown-content">
-                    <li><a href="Om.html"n>Om mig</a></li>
+                    <li><a href="Om.html" n>Om mig</a></li>
 
                 </ul>
             </li>
@@ -50,30 +58,40 @@
 
 
 
-<h1> Tema 4: Grundlæggende UX</h1>
+        <h1> Tema 4: Grundlæggende UX</h1>
 
-<h2> KEA app design</h2>
+        <h2> KEA app design</h2>
 
-<a href="http://sarahjane.dk/kea/04-ux/KEA_app/keaapp.html">
-<h3>Dokumentation af processen af KEA appen</h3>
-</a>
+        <a href="http://sarahjane.dk/kea/04-ux/KEA_app/keaapp.html">
+            <h3>Dokumentation af processen af KEA appen</h3>
+        </a>
 
- <a href="https://xd.adobe.com/view/b081e0e8-5f4d-49a9-6334-9f69268f2201-c6b0/">
-<h3> Link til prototype</h3>
-</a>
-    <img src="kea%20app%20xd.png">
+        <a href="https://xd.adobe.com/view/b081e0e8-5f4d-49a9-6334-9f69268f2201-c6b0/">
+
+            <h3> Link til prototype</h3>
+        </a>
+
+     <figure class="zoom" onmousemove="zoom(event)" style="background-image: url(kea%20app%20xd.png)">
+  <img src="kea%20app%20xd.png"/>
+
+</figure>
 
 
-<h2> Kundecase: Joe and the Juice </h2>
-        <a href="http://www.kroghport.dk/kea/04-ux/04.03.00.virksomhedscase/index.html">
-        <h3>Link til dokumentationssite</h3>
+        <h2> Kundecase: Joe and the Juice </h2>
+        <a href="http://sarahjane.dk/kea/04-ux/JOE/">
+            <h3>Link til dokumentationssite</h3>
         </a>
 
         <a href="https://docs.google.com/presentation/d/1T28mOcpyUnTTYjmxZ2-G-SigSzEghVWKuzfJK8jIbuU/edit#slide=id.p">
 
-        <img src="pres%20joe.PNG">
-        </a>
 
+
+
+        <div class="container">
+  <img src="pres%20joe.PNG" alt="Joe" class="image">
+  <div class="overlay">Klick</div>
+</div>
+</a>
 
     </main>
 
@@ -82,13 +100,19 @@
         <p>Dette site er lavet på kea af Sarah Jane Brandt</p>
     </footer>
 
+    <script>
+imageZoom("prototype", "myresult");
+</script>
+
     <script src="js/vendor/modernizr-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script>
         window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')
+
     </script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
 
 </body>
+
 </html>

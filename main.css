@@ -1,15 +1,31 @@
+h1{
+font-family:'Lora', serif;
+    color: wheat
+}
+
+h2{
+    font-family: 'Alegreya', serif;
+    color: red;
+}
+
+h3, h4, p{
+    font-family: 'Alegreya', serif;
+    color: green;
+
+}
+
 html {
-    color: #222;
+    color: black;
     font-size: 1em;
     line-height: 1.4;
-    font-family: 'Lobster', cursive;
+    font-family:'Lato', sans-serif;
 
 }
 
 body {
     max-width: 1200px;
     margin: 0 auto;
-    background-color: peachpuff;
+    background-color: ghostwhite;
 
 
 }
@@ -51,4 +67,63 @@ nav ul li {
 
 .dropdown:hover > ul {
     display: block;
+}
+
+
+/**/
+
+figure.zoom {
+  background-position: 50% 50%;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  cursor: zoom-in;
+}
+figure.zoom img:hover {
+  opacity: 0;
+}
+figure.zoom img {
+  transition: opacity 2s;
+  display: block;
+  width: 100%;
+}
+
+
+
+/**/
+
+* {box-sizing: border-box}
+
+
+.container {
+  position: relative;
+  width: 100%;
+
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+
+.container:hover .overlay {
+  opacity: 1;
 }
