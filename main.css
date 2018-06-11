@@ -335,3 +335,26 @@ figure.zoom img {
   margin-top: 2px;
   vertical-align:middle;
 }
+
+/*cat and dog*/
+* {
+    box-sizing: border-box;
+}
+
+.ani {
+    float: left;
+    width: 50%;
+    padding: 5px;
+    flex: 33.33%;
+}
+
+.container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.container {
+    display: flex;
+}
+
